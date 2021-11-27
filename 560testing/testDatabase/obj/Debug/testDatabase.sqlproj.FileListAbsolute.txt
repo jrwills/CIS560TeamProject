@@ -4,3 +4,9 @@ C:\Users\John\source\repos\560testing\testDatabase\bin\Debug\testDatabase.pdb
 C:\Users\John\source\repos\560testing\testDatabase\obj\Debug\testDatabase.sqlproj.AssemblyReference.cache
 C:\Users\John\source\repos\560testing\testDatabase\obj\Debug\testDatabase.dll
 C:\Users\John\source\repos\560testing\testDatabase\obj\Debug\testDatabase.pdb
+C:\Users\John\testmeplz\560testing\testDatabase\bin\Debug\testDatabase.dacpac
+C:\Users\John\testmeplz\560testing\testDatabase\bin\Debug\testDatabase.dll
+C:\Users\John\testmeplz\560testing\testDatabase\bin\Debug\testDatabase.pdb
+C:\Users\John\testmeplz\560testing\testDatabase\obj\Debug\testDatabase.sqlproj.AssemblyReference.cache
+C:\Users\John\testmeplz\560testing\testDatabase\obj\Debug\testDatabase.dll
+C:\Users\John\testmeplz\560testing\testDatabase\obj\Debug\testDatabase.pdb

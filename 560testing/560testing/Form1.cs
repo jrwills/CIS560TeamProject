@@ -26,6 +26,7 @@ namespace _560testing
             {
                 connect.Open();
                 label1.Text = "yay";
+                connect.Close();
             }
             catch (Exception ex)
             {

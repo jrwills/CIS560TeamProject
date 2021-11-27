@@ -10,3 +10,15 @@ C:\Users\John\source\repos\560testing\560testing\obj\Debug\560testing.csproj.Gen
 C:\Users\John\source\repos\560testing\560testing\obj\Debug\560testing.csproj.CoreCompileInputs.cache
 C:\Users\John\source\repos\560testing\560testing\obj\Debug\560testing.exe
 C:\Users\John\source\repos\560testing\560testing\obj\Debug\560testing.pdb
+C:\Users\John\testmeplz\560testing\560testing\bin\Debug\Database1.mdf
+C:\Users\John\testmeplz\560testing\560testing\bin\Debug\Database1_log.ldf
+C:\Users\John\testmeplz\560testing\560testing\bin\Debug\560testing.exe.config
+C:\Users\John\testmeplz\560testing\560testing\bin\Debug\560testing.exe
+C:\Users\John\testmeplz\560testing\560testing\bin\Debug\560testing.pdb
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\560testing.csproj.AssemblyReference.cache
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\_560testing.Form1.resources
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\_560testing.Properties.Resources.resources
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\560testing.csproj.GenerateResource.cache
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\560testing.csproj.CoreCompileInputs.cache
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\560testing.exe
+C:\Users\John\testmeplz\560testing\560testing\obj\Debug\560testing.pdb
