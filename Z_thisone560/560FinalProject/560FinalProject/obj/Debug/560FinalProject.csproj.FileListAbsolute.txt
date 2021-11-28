@@ -1,0 +1,10 @@
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\bin\Debug\560FinalProject.exe.config
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\bin\Debug\560FinalProject.exe
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\bin\Debug\560FinalProject.pdb
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.csproj.AssemblyReference.cache
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\_560FinalProject.Properties.Resources.resources
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.csproj.GenerateResource.cache
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.exe
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.pdb
+C:\Users\John\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\_560FinalProject.ConnectionForm.resources

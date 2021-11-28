@@ -16,7 +16,11 @@ namespace FinalProjectApplication
         public Form1()
         {
             InitializeComponent();
+            InitialQuery();
+        }
 
+        private void InitialQuery()
+        {
             string query = "SELECT * FROM Final.PersonalDetails";
 
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
