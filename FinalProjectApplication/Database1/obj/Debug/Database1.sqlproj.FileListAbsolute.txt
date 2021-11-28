@@ -2,9 +2,5 @@ C:\Users\John\Z560\FinalProjectApplication\Database1\bin\Debug\Database1.dacpac
 C:\Users\John\Z560\FinalProjectApplication\Database1\bin\Debug\Database1.dll
 C:\Users\John\Z560\FinalProjectApplication\Database1\bin\Debug\Database1.pdb
 C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\Database1.sqlproj.AssemblyReference.cache
-C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\Model.xml
-C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\refactor.xml
-C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\postdeploy.sql
-C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\predeploy.sql
 C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\Database1.dll
 C:\Users\John\Z560\FinalProjectApplication\Database1\obj\Debug\Database1.pdb
