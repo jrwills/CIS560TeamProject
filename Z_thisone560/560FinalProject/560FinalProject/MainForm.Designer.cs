@@ -36,17 +36,19 @@ namespace _560FinalProject
             // 
             // dataForm
             // 
+            this.dataForm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataForm.Location = new System.Drawing.Point(141, 230);
+            this.dataForm.Location = new System.Drawing.Point(12, 134);
             this.dataForm.Name = "dataForm";
-            this.dataForm.Size = new System.Drawing.Size(510, 208);
+            this.dataForm.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataForm.Size = new System.Drawing.Size(615, 304);
             this.dataForm.TabIndex = 0;
             // 
             // addPerson
             // 
-            this.addPerson.Location = new System.Drawing.Point(141, 61);
+            this.addPerson.Location = new System.Drawing.Point(12, 12);
             this.addPerson.Name = "addPerson";
-            this.addPerson.Size = new System.Drawing.Size(95, 44);
+            this.addPerson.Size = new System.Drawing.Size(115, 60);
             this.addPerson.TabIndex = 1;
             this.addPerson.Text = "ADD";
             this.addPerson.UseVisualStyleBackColor = true;

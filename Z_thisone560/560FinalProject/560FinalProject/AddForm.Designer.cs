@@ -42,6 +42,7 @@ namespace _560FinalProject
             this.phoneText = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.genderListbox = new System.Windows.Forms.CheckedListBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstText
@@ -155,12 +156,23 @@ namespace _560FinalProject
             this.genderListbox.Size = new System.Drawing.Size(137, 49);
             this.genderListbox.TabIndex = 15;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Malgun Gothic Semilight", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(51, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(279, 45);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "User Information:";
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.genderListbox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.phoneText);
@@ -196,5 +208,6 @@ namespace _560FinalProject
         private System.Windows.Forms.TextBox phoneText;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.CheckedListBox genderListbox;
+        private System.Windows.Forms.Label label7;
     }
 }

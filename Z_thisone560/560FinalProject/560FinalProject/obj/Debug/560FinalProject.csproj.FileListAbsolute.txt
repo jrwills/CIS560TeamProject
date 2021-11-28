@@ -19,3 +19,4 @@ C:\Users\John\Z560\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560Fin
 C:\Users\John\Z560\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.exe
 C:\Users\John\Z560\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\560FinalProject.pdb
 C:\Users\John\Z560\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\_560FinalProject.MainForm.resources
+C:\Users\John\Z560\Z_thisone560\560FinalProject\560FinalProject\obj\Debug\_560FinalProject.AddForm.resources

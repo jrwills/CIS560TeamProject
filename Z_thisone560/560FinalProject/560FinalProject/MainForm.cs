@@ -23,6 +23,9 @@ namespace _560FinalProject
             InitialQuery();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         private void InitialQuery()
         {
             string query = "SELECT * FROM Final.PersonalDetails";
@@ -47,10 +50,26 @@ namespace _560FinalProject
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void addPerson_Click(object sender, EventArgs e)
         {
             AddForm af = new AddForm();
-            af.ShowDialog();
+            af.Show(); //originally showdialog
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public string RetrieveGender(string s)
+        {
+            return s;
+        }
+
     }
 }

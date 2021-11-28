@@ -17,7 +17,10 @@ namespace _560FinalProject
         {
             InitializeComponent();
         }
-
+             
+        /// <summary>
+        /// 
+        /// </summary>
         private void xQuery()
         {
             string first = firstText.Text;
@@ -45,9 +48,17 @@ namespace _560FinalProject
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void addButton_Click(object sender, EventArgs e)
         {
+            MainForm mf = new MainForm(); //eh
+            string gender = "";
+
+            //error handle first
             if (firstText.Text == null
                         || lastText.Text == null
                             || emailText.Text == null
@@ -55,12 +66,31 @@ namespace _560FinalProject
                                     || phoneText.Text == null
                                         || (genderListbox.CheckedItems.Count > 1 || genderListbox.CheckedItems.Count == 0))
             {
-                MessageBox.Show("Please Enter Valid Credentials and Check only ONE box");
+                MessageBox.Show("Please Enter Valid Credentials");
             }
             else
             {
-
+                int c = genderListbox.SelectedIndex;
+                
+                switch(c)
+                {
+                    default:
+                        MessageBox.Show("Please select ONE item from the listbox");
+                        break;
+                    case 0:
+                        gender = "Male";
+                        break;
+                    case 1:
+                        gender = "Female";
+                        break;
+                    case 2:
+                        gender = "Other";
+                        break;
+                }
+                mf.RetrieveGender(gender);
+                xQuery();
             }
+            
         }
     }
 }
