@@ -1,0 +1,12 @@
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\bin\Debug\Database1.mdf
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\bin\Debug\Database1_log.ldf
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\bin\Debug\FinalProjectApplication.exe.config
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\bin\Debug\FinalProjectApplication.exe
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\bin\Debug\FinalProjectApplication.pdb
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.csproj.AssemblyReference.cache
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.Form1.resources
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.Properties.Resources.resources
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.csproj.GenerateResource.cache
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.csproj.CoreCompileInputs.cache
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.exe
+C:\Users\John\Z560\FinalProjectApplication\FinalProjectApplication\obj\Debug\FinalProjectApplication.pdb
