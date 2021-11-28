@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * File: ConnectionForm.cs
+ * Purpose: Confirm connection to the SQL server
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +20,6 @@ namespace _560FinalProject
         public ConnectionForm()
         {
             InitializeComponent();
-            //InitialQuery();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,6 +32,9 @@ namespace _560FinalProject
             {
                 connect.Open();
                 MessageBox.Show("You are connected");
+                MainForm mf = new MainForm();
+                mf.ShowDialog();
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -36,34 +42,5 @@ namespace _560FinalProject
                 connect.Close();
             }
         }
-
-        /*private void InitialQuery()
-        {
-            string query = "SELECT * FROM Final.PersonalDetails";
-
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
-            //SqlConnection connect = new SqlConnection(connectionString);
-
-            using (SqlConnection myConnection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand myCommand = new SqlCommand(query, myConnection))
-                {
-                    myCommand.CommandType = CommandType.Text;
-                    using (SqlDataAdapter sda = new SqlDataAdapter(myCommand))
-                    {
-                        using (DataTable dt = new DataTable())
-                        {
-                            sda.Fill(dt);
-                            dataForm.DataSource = dt;
-                        }
-                        //DataTable myTable = new DataTable();
-                        //myTable.Load(myReader);
-                        //dataForm.Rows = myTable.Rows;
-                        //myConnection.Close();
-
-                    }
-                }
-            }
-        }*/
     }
 }
