@@ -37,9 +37,11 @@ namespace _560FinalProject
             // connLabel
             // 
             this.connLabel.AutoSize = true;
+            this.connLabel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.connLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.connLabel.Font = new System.Drawing.Font("Dubai Medium", 14F, System.Drawing.FontStyle.Bold);
-            this.connLabel.Location = new System.Drawing.Point(2, 56);
+            this.connLabel.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.connLabel.Location = new System.Drawing.Point(2, 66);
             this.connLabel.Name = "connLabel";
             this.connLabel.Size = new System.Drawing.Size(375, 32);
             this.connLabel.TabIndex = 1;
@@ -60,7 +62,8 @@ namespace _560FinalProject
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Dubai Medium", 14F);
-            this.label1.Location = new System.Drawing.Point(101, 88);
+            this.label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.Location = new System.Drawing.Point(101, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 3;
@@ -70,7 +73,7 @@ namespace _560FinalProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(377, 312);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

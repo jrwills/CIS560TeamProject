@@ -34,12 +34,12 @@ namespace _560FinalProject
                 MessageBox.Show("You are connected");
                 MainForm mf = new MainForm();
                 mf.ShowDialog();
-                this.Close();
             }
             catch (Exception ex) //If this occurs, try reloading MSSQL Management Tab with Databse conected
             {
-                MessageBox.Show("ERROR: Could not connect");
+                MessageBox.Show("ERROR: Could not connect" + ex);
                 connect.Close();
+                this.Close(); //Exits the program
             }
         }
     }

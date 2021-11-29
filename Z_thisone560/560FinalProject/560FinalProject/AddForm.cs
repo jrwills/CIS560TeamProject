@@ -59,7 +59,7 @@ namespace _560FinalProject
         /// <param name="e"></param>
         private void addButton_Click(object sender, EventArgs e)
         {
-            MainForm mf = new MainForm(); //eh
+            //MainForm mf = new MainForm(); //eh
             string gender = "";
 
             //error handle first
@@ -91,7 +91,7 @@ namespace _560FinalProject
                         gender = "Other";
                         break;
                 }
-                mf.RetrieveGender(gender);
+                //mf.RetrieveGender(gender);
                 xQuery();
             }
             
