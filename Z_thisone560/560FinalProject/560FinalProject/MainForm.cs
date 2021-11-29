@@ -71,5 +71,14 @@ namespace _560FinalProject
             return s;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void queryButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

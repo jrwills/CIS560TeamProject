@@ -62,6 +62,7 @@ namespace _560FinalProject
             this.queryButton.TabIndex = 2;
             this.queryButton.Text = "Query one";
             this.queryButton.UseVisualStyleBackColor = true;
+            this.queryButton.Click += new System.EventHandler(this.queryButton_Click);
             // 
             // MainForm
             // 

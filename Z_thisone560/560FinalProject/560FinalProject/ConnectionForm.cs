@@ -36,7 +36,7 @@ namespace _560FinalProject
                 mf.ShowDialog();
                 this.Close();
             }
-            catch (Exception ex)
+            catch (Exception ex) //If this occurs, try reloading MSSQL Management Tab with Databse conected
             {
                 MessageBox.Show("ERROR: Could not connect");
                 connect.Close();
