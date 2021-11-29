@@ -31,6 +31,7 @@ namespace _560FinalProject
         {
             this.dataForm = new System.Windows.Forms.DataGridView();
             this.addPerson = new System.Windows.Forms.Button();
+            this.queryButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,8 +41,7 @@ namespace _560FinalProject
             this.dataForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataForm.Location = new System.Drawing.Point(12, 134);
             this.dataForm.Name = "dataForm";
-            this.dataForm.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataForm.Size = new System.Drawing.Size(615, 304);
+            this.dataForm.Size = new System.Drawing.Size(619, 304);
             this.dataForm.TabIndex = 0;
             // 
             // addPerson
@@ -54,12 +54,22 @@ namespace _560FinalProject
             this.addPerson.UseVisualStyleBackColor = true;
             this.addPerson.Click += new System.EventHandler(this.addPerson_Click);
             // 
+            // queryButton
+            // 
+            this.queryButton.Location = new System.Drawing.Point(159, 12);
+            this.queryButton.Name = "queryButton";
+            this.queryButton.Size = new System.Drawing.Size(115, 60);
+            this.queryButton.TabIndex = 2;
+            this.queryButton.Text = "Query one";
+            this.queryButton.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.queryButton);
             this.Controls.Add(this.addPerson);
             this.Controls.Add(this.dataForm);
             this.Name = "MainForm";
@@ -73,5 +83,6 @@ namespace _560FinalProject
 
         private System.Windows.Forms.DataGridView dataForm;
         private System.Windows.Forms.Button addPerson;
+        private System.Windows.Forms.Button queryButton;
     }
 }

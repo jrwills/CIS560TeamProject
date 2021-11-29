@@ -97,5 +97,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\Data\" />
+    <Folder Include="SQL\Procedures\" />
+    <Folder Include="SQL\Schemas\" />
+    <Folder Include="SQL\Tables\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
