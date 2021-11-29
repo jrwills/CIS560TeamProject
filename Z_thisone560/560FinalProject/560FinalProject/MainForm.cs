@@ -102,7 +102,7 @@ namespace _560FinalProject
         /// <param name="e"></param>
         private void queryButton_Click(object sender, EventArgs e)
         {
-            ForQueries("SELECT PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.UniqueID = PD.UniqueID ORDER BY FirstName ASC");
+            ForQueries("SELECT D.DonorID, PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID ORDER BY FirstName ASC");
             tableLabel.Text = "Health Database (Donors)";
         }
 
@@ -113,7 +113,7 @@ namespace _560FinalProject
         /// <param name="e"></param>
         private void patientButton_Click(object sender, EventArgs e)
         {
-            ForQueries("SELECT PD.FirstName, PD.LastName, P.BloodType, PD.Gender FROM Final.Patient P INNER JOIN Final.PersonalDetails PD ON P.UniqueID = PD.UniqueID ORDER BY PD.FirstName ASC");
+            ForQueries("SELECT P.PatientID, PD.FirstName, PD.LastName, P.BloodType, PD.Gender FROM Final.Patient P INNER JOIN Final.PersonalDetails PD ON P.PatientID = PD.UniqueID ORDER BY PD.FirstName ASC");
             tableLabel.Text = "Health Database (Patients)";
         }
 
@@ -137,9 +137,41 @@ namespace _560FinalProject
             }
             else
             {
-
+                MessageBox.Show("Please enter a valid LastName");
             }
-            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void medicalButton_Click(object sender, EventArgs e)
+        {
+            ForQueries("SELECT MP.MedicalPersonnelID, PD.FirstName, PD.LastName, PD.Gender FROM Final.MedicalPersonnel MP INNER JOIN Final.PersonalDetails PD ON MP.MedicalPersonnelID = PD.UniqueID ORDER BY PD.FirstName ASC");
+            tableLabel.Text = "Health Database (Medical personnel)";
+        }
+
+        /// <summary>
+        /// Displays the initial
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void allButton_Click(object sender, EventArgs e)
+        {
+            ForQueries("SELECT * FROM Final.PersonalDetails");
+            tableLabel.Text = "Health Database (All personnel)";
+        }
+
+
+        /// <summary>
+        /// Sotred procedure 1??
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void q1Button_Click(object sender, EventArgs e)
+        {
+
         }
 
         //------------------------------------- Auxillary Methods ---------------------------------------------------------//
@@ -153,6 +185,5 @@ namespace _560FinalProject
         {
             return s;
         }
-
     }
 }

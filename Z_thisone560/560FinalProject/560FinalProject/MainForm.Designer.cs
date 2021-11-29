@@ -38,21 +38,28 @@ namespace _560FinalProject
             this.searchText = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.medicalButton = new System.Windows.Forms.Button();
+            this.allButton = new System.Windows.Forms.Button();
+            this.q1Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataForm)).BeginInit();
             this.SuspendLayout();
             // 
             // dataForm
             // 
-            this.dataForm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataForm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataForm.Location = new System.Drawing.Point(12, 134);
+            this.dataForm.Location = new System.Drawing.Point(18, 134);
             this.dataForm.Name = "dataForm";
-            this.dataForm.Size = new System.Drawing.Size(619, 304);
+            this.dataForm.Size = new System.Drawing.Size(649, 304);
             this.dataForm.TabIndex = 0;
             // 
             // addPerson
             // 
-            this.addPerson.Location = new System.Drawing.Point(660, 378);
+            this.addPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addPerson.Location = new System.Drawing.Point(673, 114);
             this.addPerson.Name = "addPerson";
             this.addPerson.Size = new System.Drawing.Size(115, 60);
             this.addPerson.TabIndex = 1;
@@ -62,7 +69,8 @@ namespace _560FinalProject
             // 
             // queryButton
             // 
-            this.queryButton.Location = new System.Drawing.Point(660, 312);
+            this.queryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.queryButton.Location = new System.Drawing.Point(673, 378);
             this.queryButton.Name = "queryButton";
             this.queryButton.Size = new System.Drawing.Size(115, 60);
             this.queryButton.TabIndex = 2;
@@ -93,7 +101,8 @@ namespace _560FinalProject
             // 
             // patientButton
             // 
-            this.patientButton.Location = new System.Drawing.Point(660, 246);
+            this.patientButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.patientButton.Location = new System.Drawing.Point(673, 312);
             this.patientButton.Name = "patientButton";
             this.patientButton.Size = new System.Drawing.Size(115, 60);
             this.patientButton.TabIndex = 5;
@@ -129,12 +138,48 @@ namespace _560FinalProject
             this.label2.TabIndex = 8;
             this.label2.Text = "<- I dont work rn";
             // 
+            // medicalButton
+            // 
+            this.medicalButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.medicalButton.Location = new System.Drawing.Point(673, 246);
+            this.medicalButton.Name = "medicalButton";
+            this.medicalButton.Size = new System.Drawing.Size(115, 60);
+            this.medicalButton.TabIndex = 9;
+            this.medicalButton.Text = "Medical";
+            this.medicalButton.UseVisualStyleBackColor = true;
+            this.medicalButton.Click += new System.EventHandler(this.medicalButton_Click);
+            // 
+            // allButton
+            // 
+            this.allButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.allButton.Location = new System.Drawing.Point(673, 180);
+            this.allButton.Name = "allButton";
+            this.allButton.Size = new System.Drawing.Size(115, 60);
+            this.allButton.TabIndex = 10;
+            this.allButton.Text = "All";
+            this.allButton.UseVisualStyleBackColor = true;
+            this.allButton.Click += new System.EventHandler(this.allButton_Click);
+            // 
+            // q1Button
+            // 
+            this.q1Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.q1Button.Location = new System.Drawing.Point(474, 9);
+            this.q1Button.Name = "q1Button";
+            this.q1Button.Size = new System.Drawing.Size(63, 47);
+            this.q1Button.TabIndex = 11;
+            this.q1Button.Text = "Query1";
+            this.q1Button.UseVisualStyleBackColor = true;
+            this.q1Button.Click += new System.EventHandler(this.q1Button_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.q1Button);
+            this.Controls.Add(this.allButton);
+            this.Controls.Add(this.medicalButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchText);
@@ -164,5 +209,8 @@ namespace _560FinalProject
         private System.Windows.Forms.TextBox searchText;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button medicalButton;
+        private System.Windows.Forms.Button allButton;
+        private System.Windows.Forms.Button q1Button;
     }
 }
