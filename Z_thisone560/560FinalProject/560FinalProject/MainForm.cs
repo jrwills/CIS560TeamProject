@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient; //added by me
+using System.Data.SqlClient; //added by me which will not utilize any Entity Frameworks
 
 namespace _560FinalProject
 {
