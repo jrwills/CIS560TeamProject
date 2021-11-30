@@ -131,12 +131,12 @@ namespace _560FinalProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Dubai Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(258, 20);
+            this.label2.Font = new System.Drawing.Font("Dubai Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.Location = new System.Drawing.Point(13, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 36);
+            this.label2.Size = new System.Drawing.Size(133, 27);
             this.label2.TabIndex = 8;
-            this.label2.Text = "<- I dont work rn";
+            this.label2.Text = "^ UniqueID only";
             // 
             // medicalButton
             // 
@@ -162,12 +162,11 @@ namespace _560FinalProject
             // 
             // q1Button
             // 
-            this.q1Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.q1Button.Location = new System.Drawing.Point(474, 9);
+            this.q1Button.Location = new System.Drawing.Point(260, 12);
             this.q1Button.Name = "q1Button";
-            this.q1Button.Size = new System.Drawing.Size(63, 47);
+            this.q1Button.Size = new System.Drawing.Size(96, 47);
             this.q1Button.TabIndex = 11;
-            this.q1Button.Text = "Query1";
+            this.q1Button.Text = "Blood Donations";
             this.q1Button.UseVisualStyleBackColor = true;
             this.q1Button.Click += new System.EventHandler(this.q1Button_Click);
             // 

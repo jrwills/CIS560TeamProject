@@ -21,35 +21,34 @@ namespace _560FinalProject
         {
             InitializeComponent();
         }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        private void xQuery()
-        {
-            string first = firstText.Text;
-            string last = lastText.Text;
-            string email = emailText.Text;
-            string query = "INSERT Final.PersonalDetails(FirstName, LastName, Email) VALUES (N'{first}', N'{last}', N'{email}')";
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
+        private void ForAddQueries(string query)
+        {
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True"; //TestDatabase2 on localdb pc
             //SqlConnection connect = new SqlConnection(connectionString);
 
             using (SqlConnection myConnection = new SqlConnection(connectionString))
             {
-                using (SqlCommand myCommand = new SqlCommand(query, myConnection))
-                {
-                    myCommand.CommandType = CommandType.Text;
-                    using (SqlDataAdapter sda = new SqlDataAdapter(myCommand))
-                    {
-                        using (DataTable dt = new DataTable())
-                        {
-                            sda.Fill(dt);
-                            //dataForm.DataSource = dt;
-                        }
-                    }
-                }
+                myConnection.Open();
+                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                myCommand.ExecuteNonQuery(); //executes stuff
+                myConnection.Close();
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private void AddQuery(string g)
+        {
+            string first = firstText.Text;
+            string last = lastText.Text;
+            string email = emailText.Text;
+            string phone = phoneText.Text;
+            string street = streetText.Text;
+            string unique = idText.Text;
+            ForAddQueries("INSERT Final.PersonalDetails(UniqueID, FirstName, LastName, Email, Gender, StreetAddress) VALUES (N'" + unique + "',N'" + first+ "', N'" + last + "', N'" + email + "',N'" + g + "',N'" + street + "')");
+
         }
 
         /// <summary>
@@ -66,9 +65,8 @@ namespace _560FinalProject
             if (firstText.Text == null
                         || lastText.Text == null
                             || emailText.Text == null
-                                || dobText.Text == null
-                                    || phoneText.Text == null
-                                        || (genderListbox.CheckedItems.Count > 1 || genderListbox.CheckedItems.Count == 0))
+                                || phoneText.Text == null
+                                    || (genderListbox.CheckedItems.Count > 1 || genderListbox.CheckedItems.Count == 0))
             {
                 MessageBox.Show("Please Enter Valid Credentials");
             }
@@ -91,8 +89,8 @@ namespace _560FinalProject
                         gender = "Other";
                         break;
                 }
-                //mf.RetrieveGender(gender);
-                xQuery();
+                AddQuery(gender);
+                this.Close();
             }
             
         }

@@ -127,8 +127,8 @@ namespace _560FinalProject
             string s = searchText.Text; //Must be exact im guessing :(
             if(tableLabel.Text.Contains("Donors"))
             {
-                ForQueries("SELECT PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.UniqueID = PD.UniqueID WHERE PD.LastName = " + s + " ORDER BY PD.FirstName ASC");
-                tableLabel.Text = "Health Database ()";
+                ForQueries("SELECT PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID WHERE D.DonorID = " + s + " ORDER BY PD.FirstName ASC");
+                tableLabel.Text = "Health Database ()"; //                                                                                      NVAR 32 = NVAR 32
             }
             else if(tableLabel.Text.Contains("Patients"))
             {
@@ -165,13 +165,14 @@ namespace _560FinalProject
 
 
         /// <summary>
-        /// Sotred procedure 1??
+        /// Query to Only display Blood Donation database
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void q1Button_Click(object sender, EventArgs e)
         {
-
+            ForQueries("SELECT * FROM Final.BloodDonation");
+            tableLabel.Text = "Health Database (Blood Donations)";
         }
 
         //------------------------------------- Auxillary Methods ---------------------------------------------------------//

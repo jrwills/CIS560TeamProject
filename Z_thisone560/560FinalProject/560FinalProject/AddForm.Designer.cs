@@ -36,13 +36,15 @@ namespace _560FinalProject
             this.label3 = new System.Windows.Forms.Label();
             this.emailText = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dobText = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.phoneText = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.genderListbox = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.streetText = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.idText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // firstText
@@ -72,7 +74,7 @@ namespace _560FinalProject
             // 
             // lastText
             // 
-            this.lastText.Location = new System.Drawing.Point(122, 138);
+            this.lastText.Location = new System.Drawing.Point(122, 135);
             this.lastText.Name = "lastText";
             this.lastText.Size = new System.Drawing.Size(172, 20);
             this.lastText.TabIndex = 3;
@@ -80,7 +82,7 @@ namespace _560FinalProject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(81, 188);
+            this.label3.Location = new System.Drawing.Point(82, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 4;
@@ -88,7 +90,7 @@ namespace _560FinalProject
             // 
             // emailText
             // 
-            this.emailText.Location = new System.Drawing.Point(122, 185);
+            this.emailText.Location = new System.Drawing.Point(122, 182);
             this.emailText.Name = "emailText";
             this.emailText.Size = new System.Drawing.Size(172, 20);
             this.emailText.TabIndex = 5;
@@ -102,26 +104,10 @@ namespace _560FinalProject
             this.label4.TabIndex = 6;
             this.label4.Text = "Gender:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(45, 233);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Date Of Birth:";
-            // 
-            // dobText
-            // 
-            this.dobText.Location = new System.Drawing.Point(122, 230);
-            this.dobText.Name = "dobText";
-            this.dobText.Size = new System.Drawing.Size(172, 20);
-            this.dobText.TabIndex = 11;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(36, 273);
+            this.label6.Location = new System.Drawing.Point(36, 230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 12;
@@ -129,7 +115,7 @@ namespace _560FinalProject
             // 
             // phoneText
             // 
-            this.phoneText.Location = new System.Drawing.Point(122, 270);
+            this.phoneText.Location = new System.Drawing.Point(122, 227);
             this.phoneText.Name = "phoneText";
             this.phoneText.Size = new System.Drawing.Size(172, 20);
             this.phoneText.TabIndex = 13;
@@ -166,19 +152,53 @@ namespace _560FinalProject
             this.label7.TabIndex = 16;
             this.label7.Text = "User Information:";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(79, 271);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Street:";
+            // 
+            // streetText
+            // 
+            this.streetText.Location = new System.Drawing.Point(122, 268);
+            this.streetText.Name = "streetText";
+            this.streetText.Size = new System.Drawing.Size(172, 20);
+            this.streetText.TabIndex = 18;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(62, 314);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "UniqueID:";
+            // 
+            // idText
+            // 
+            this.idText.Location = new System.Drawing.Point(122, 311);
+            this.idText.Name = "idText";
+            this.idText.Size = new System.Drawing.Size(172, 20);
+            this.idText.TabIndex = 20;
+            // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.idText);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.streetText);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.genderListbox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.phoneText);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dobText);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.emailText);
             this.Controls.Add(this.label3);
@@ -202,12 +222,14 @@ namespace _560FinalProject
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox emailText;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox dobText;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox phoneText;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.CheckedListBox genderListbox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox streetText;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox idText;
     }
 }
