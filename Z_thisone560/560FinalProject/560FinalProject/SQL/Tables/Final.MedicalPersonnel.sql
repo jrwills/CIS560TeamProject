@@ -1,0 +1,5 @@
+CREATE TABLE Final.MedicalPersonnel
+(
+	MedicalPersonnelID INT NOT NULL PRIMARY KEY,
+	UniqueID NVARCHAR(32) NOT NULL UNIQUE
+);

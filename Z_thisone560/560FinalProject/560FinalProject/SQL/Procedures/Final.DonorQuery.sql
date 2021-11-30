@@ -1,0 +1,2 @@
+--Query to display all donors
+SELECT D.DonorID, PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.UniqueID = PD.UniqueID ORDER BY FirstName ASC

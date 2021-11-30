@@ -1,3 +1,4 @@
+--use [TestDatabase2];
 CREATE TABLE Final.PersonalDetails
 (
 	UniqueID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
