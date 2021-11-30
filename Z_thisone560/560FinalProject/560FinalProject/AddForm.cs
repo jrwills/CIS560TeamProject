@@ -47,7 +47,7 @@ namespace _560FinalProject
             string phone = phoneText.Text;
             string street = streetText.Text;
             string unique = idText.Text;
-            ForAddQueries("INSERT Final.PersonalDetails(UniqueID, FirstName, LastName, Email, Gender, StreetAddress) VALUES (N'" + unique + "',N'" + first+ "', N'" + last + "', N'" + email + "',N'" + g + "',N'" + street + "')");
+            ForAddQueries("INSERT Final.PersonalDetails(UniqueID, FirstName, LastName, Email, Gender, StreetAddress, PhoneNumber) VALUES (N'" + unique + "',N'" + first+ "', N'" + last + "', N'" + email + "',N'" + g + "',N'" + street + "',N'" + phone + "')");
 
         }
 

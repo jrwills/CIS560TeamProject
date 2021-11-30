@@ -63,7 +63,7 @@ namespace _560FinalProject
             // addPerson
             // 
             this.addPerson.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addPerson.Location = new System.Drawing.Point(673, 114);
+            this.addPerson.Location = new System.Drawing.Point(673, 48);
             this.addPerson.Name = "addPerson";
             this.addPerson.Size = new System.Drawing.Size(115, 60);
             this.addPerson.TabIndex = 1;
@@ -138,9 +138,9 @@ namespace _560FinalProject
             this.label2.Font = new System.Drawing.Font("Dubai Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label2.Location = new System.Drawing.Point(13, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 27);
+            this.label2.Size = new System.Drawing.Size(170, 27);
             this.label2.TabIndex = 8;
-            this.label2.Text = "^ UniqueID only";
+            this.label2.Text = "^ Non-UniqueID only";
             // 
             // medicalButton
             // 
@@ -166,9 +166,10 @@ namespace _560FinalProject
             // 
             // q1Button
             // 
-            this.q1Button.Location = new System.Drawing.Point(260, 12);
+            this.q1Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.q1Button.Location = new System.Drawing.Point(673, 114);
             this.q1Button.Name = "q1Button";
-            this.q1Button.Size = new System.Drawing.Size(96, 47);
+            this.q1Button.Size = new System.Drawing.Size(115, 60);
             this.q1Button.TabIndex = 11;
             this.q1Button.Text = "Blood Donations";
             this.q1Button.UseVisualStyleBackColor = true;
@@ -176,17 +177,17 @@ namespace _560FinalProject
             // 
             // query1Button
             // 
-            this.query1Button.Location = new System.Drawing.Point(371, 12);
+            this.query1Button.Location = new System.Drawing.Point(268, 12);
             this.query1Button.Name = "query1Button";
             this.query1Button.Size = new System.Drawing.Size(103, 47);
             this.query1Button.TabIndex = 12;
-            this.query1Button.Text = "Female Platelet Donors";
+            this.query1Button.Text = "(Report) Female Platelet Donors";
             this.query1Button.UseVisualStyleBackColor = true;
             this.query1Button.Click += new System.EventHandler(this.query1Button_Click);
             // 
             // query2Button
             // 
-            this.query2Button.Location = new System.Drawing.Point(480, 12);
+            this.query2Button.Location = new System.Drawing.Point(371, 61);
             this.query2Button.Name = "query2Button";
             this.query2Button.Size = new System.Drawing.Size(103, 47);
             this.query2Button.TabIndex = 13;
@@ -196,22 +197,23 @@ namespace _560FinalProject
             // 
             // query3Button
             // 
-            this.query3Button.Location = new System.Drawing.Point(371, 65);
+            this.query3Button.Location = new System.Drawing.Point(371, 12);
             this.query3Button.Name = "query3Button";
             this.query3Button.Size = new System.Drawing.Size(103, 47);
             this.query3Button.TabIndex = 14;
-            this.query3Button.Text = "Donation Count";
+            this.query3Button.Text = "Male Donation Count";
             this.query3Button.UseVisualStyleBackColor = true;
             this.query3Button.Click += new System.EventHandler(this.query3Button_Click);
             // 
             // query4Button
             // 
-            this.query4Button.Location = new System.Drawing.Point(480, 65);
+            this.query4Button.Location = new System.Drawing.Point(268, 61);
             this.query4Button.Name = "query4Button";
             this.query4Button.Size = new System.Drawing.Size(103, 47);
             this.query4Button.TabIndex = 15;
-            this.query4Button.Text = "Query4";
+            this.query4Button.Text = "(Report) query";
             this.query4Button.UseVisualStyleBackColor = true;
+            this.query4Button.Click += new System.EventHandler(this.query4Button_Click);
             // 
             // MainForm
             // 

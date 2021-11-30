@@ -1,6 +1,0 @@
-CREATE TABLE Final.Donor 
-(
-	DonorID NVARCHAR(32) NOT NULL PRIMARY KEY,
-	BloodType NVARCHAR(16) NOT NULL,
-	UniqueID INT NOT NULL IDENTITY(1,1) --need identity here?
-);
