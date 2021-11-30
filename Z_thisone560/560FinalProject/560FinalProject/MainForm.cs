@@ -39,25 +39,7 @@ namespace _560FinalProject
         private void InitialQuery()
         {
             string query = "SELECT * FROM Final.PersonalDetails";
-
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
-            //SqlConnection connect = new SqlConnection(connectionString);
-
-            using (SqlConnection myConnection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand myCommand = new SqlCommand(query, myConnection))
-                {
-                    myCommand.CommandType = CommandType.Text;
-                    using (SqlDataAdapter sda = new SqlDataAdapter(myCommand))
-                    {
-                        using (DataTable dt = new DataTable())
-                        {
-                            sda.Fill(dt);
-                            dataForm.DataSource = dt;
-                        }
-                    }
-                }
-            }
+            ForQueries(query);
         }
 
         private void ForQueries(string query)
@@ -65,12 +47,12 @@ namespace _560FinalProject
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
             //SqlConnection connect = new SqlConnection(connectionString);
 
-            using (SqlConnection myConnection = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                using (SqlCommand myCommand = new SqlCommand(query, myConnection))
+                using (SqlCommand comm = new SqlCommand(query, con))
                 {
-                    myCommand.CommandType = CommandType.Text;
-                    using (SqlDataAdapter sda = new SqlDataAdapter(myCommand))
+                    comm.CommandType = CommandType.Text;
+                    using (SqlDataAdapter sda = new SqlDataAdapter(comm))
                     {
                         using (DataTable dt = new DataTable())
                         {
@@ -165,7 +147,7 @@ namespace _560FinalProject
 
 
         /// <summary>
-        /// Query to Only display Blood Donation database
+        /// BLOOD DONATION CLICK
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -175,16 +157,18 @@ namespace _560FinalProject
             tableLabel.Text = "Health Database (Blood Donations)";
         }
 
+        /// <summary>
+        /// QUERY 1 CLICK (display only female donors (later in the past year))
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void query1Button_Click(object sender, EventArgs e)
+        {
+            ForQueries("SELECT BD.Date, Gender, PD.FirstName, PD.LastName, D.BloodType, BD.DonationType FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID INNER JOIN Final.BloodDonation BD ON BD.DonorBloodType = D.BloodType AND BD.Date > '2020-01-01' WHERE PD.Gender = 'Female' AND BD.DonationType = 'Platelets' ORDER BY Date ASC, PD.LastName ASC");
+            tableLabel.Text = "All Female [Platelets] Donations since 2020";
+        }
+
         //------------------------------------- Auxillary Methods ---------------------------------------------------------//
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public string RetrieveGender(string s)
-        {
-            return s;
-        }
     }
 }

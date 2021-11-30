@@ -41,6 +41,7 @@ namespace _560FinalProject
             this.medicalButton = new System.Windows.Forms.Button();
             this.allButton = new System.Windows.Forms.Button();
             this.q1Button = new System.Windows.Forms.Button();
+            this.query1Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,12 +171,23 @@ namespace _560FinalProject
             this.q1Button.UseVisualStyleBackColor = true;
             this.q1Button.Click += new System.EventHandler(this.q1Button_Click);
             // 
+            // query1Button
+            // 
+            this.query1Button.Location = new System.Drawing.Point(371, 12);
+            this.query1Button.Name = "query1Button";
+            this.query1Button.Size = new System.Drawing.Size(103, 47);
+            this.query1Button.TabIndex = 12;
+            this.query1Button.Text = "Query1";
+            this.query1Button.UseVisualStyleBackColor = true;
+            this.query1Button.Click += new System.EventHandler(this.query1Button_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.query1Button);
             this.Controls.Add(this.q1Button);
             this.Controls.Add(this.allButton);
             this.Controls.Add(this.medicalButton);
@@ -211,5 +223,6 @@ namespace _560FinalProject
         private System.Windows.Forms.Button medicalButton;
         private System.Windows.Forms.Button allButton;
         private System.Windows.Forms.Button q1Button;
+        private System.Windows.Forms.Button query1Button;
     }
 }
