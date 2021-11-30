@@ -42,6 +42,10 @@ namespace _560FinalProject
             ForQueries(query);
         }
 
+        /// <summary>
+        /// Intent to NOT reuse code every method
+        /// </summary>
+        /// <param name="query"></param>
         private void ForQueries(string query)
         {
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=TestDatabase2;Integrated Security=True";
@@ -110,7 +114,7 @@ namespace _560FinalProject
             if(tableLabel.Text.Contains("Donors"))
             {
                 ForQueries("SELECT PD.FirstName, PD.LastName, D.BloodType, PD.Gender FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID WHERE D.DonorID = " + s + " ORDER BY PD.FirstName ASC");
-                tableLabel.Text = "Health Database ()"; //                                                                                      NVAR 32 = NVAR 32
+                tableLabel.Text = "Health Database ()"; 
             }
             else if(tableLabel.Text.Contains("Patients"))
             {
@@ -119,7 +123,7 @@ namespace _560FinalProject
             }
             else
             {
-                MessageBox.Show("Please enter a valid LastName");
+                MessageBox.Show("Please enter a valid ID");
             }
         }
 
@@ -168,6 +172,27 @@ namespace _560FinalProject
             tableLabel.Text = "All Female [Platelets] Donations since 2020";
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void query2Button_Click(object sender, EventArgs e)
+        {
+            ForQueries("SELECT DISTINCT BD.Date, Gender, PD.FirstName, PD.LastName, D.BloodType, BD.DonationType FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID INNER JOIN Final.BloodDonation BD ON BD.DonorBloodType = D.BloodType AND BD.Date > '2021-01-01' WHERE BD.DonationType = 'Plasma' ORDER BY Date ASC, PD.LastName ASC");
+            tableLabel.Text = "All [Plasma] Donations since 2021";
+        }
+
+        /// <summary>
+        /// Donation count for all Male donors
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void query3Button_Click(object sender, EventArgs e)
+        {
+            ForQueries("SELECT PD.FirstName, PD.LastName, D.BloodType, BD.DonationType, COUNT(*) AS DonationCount FROM Final.Donor D INNER JOIN Final.PersonalDetails PD ON D.DonorID = PD.UniqueID INNER JOIN Final.BloodDonation BD ON BD.DonorBloodType = D.BloodType AND BD.DonationType = 'Platelets' WHERE PD.Gender = 'Male' GROUP BY PD.FirstName, PD.LastName, D.BloodType, BD.DonationType ORDER BY PD.FirstName ASC");
+            tableLabel.Text = "Number of [Platelet] Donations per Male";
+        }
         //------------------------------------- Auxillary Methods ---------------------------------------------------------//
 
     }

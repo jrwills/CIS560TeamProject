@@ -31,7 +31,7 @@ namespace _560FinalProject
             {
                 myConnection.Open();
                 SqlCommand myCommand = new SqlCommand(query, myConnection);
-                myCommand.ExecuteNonQuery(); //executes stuff
+                myCommand.ExecuteNonQuery(); //executes the SQL query passed in as a parameter
                 myConnection.Close();
             }
         }

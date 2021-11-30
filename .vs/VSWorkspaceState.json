@@ -4,8 +4,11 @@
     "\\Z_thisone560",
     "\\Z_thisone560\\560FinalProject",
     "\\Z_thisone560\\560FinalProject\\560FinalProject",
-    "\\Z_thisone560\\560FinalProject\\560FinalProject\\SQL"
+    "\\Z_thisone560\\560FinalProject\\560FinalProject\\SQL",
+    "\\Z_thisone560\\560FinalProject\\560FinalProject\\SQL\\Procedures",
+    "\\Z_thisone560\\560FinalProject\\560FinalProject\\SQL\\Schemas",
+    "\\Z_thisone560\\560FinalProject\\560FinalProject\\SQL\\Tables"
   ],
-  "SelectedNode": "\\Z_thisone560\\560FinalProject\\560FinalProject\\ConnectionForm.cs",
+  "SelectedNode": "\\Z_thisone560\\560FinalProject\\560FinalProject\\MainForm.cs",
   "PreviewInSolutionExplorer": false
 }

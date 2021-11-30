@@ -42,6 +42,9 @@ namespace _560FinalProject
             this.allButton = new System.Windows.Forms.Button();
             this.q1Button = new System.Windows.Forms.Button();
             this.query1Button = new System.Windows.Forms.Button();
+            this.query2Button = new System.Windows.Forms.Button();
+            this.query3Button = new System.Windows.Forms.Button();
+            this.query4Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,9 +55,9 @@ namespace _560FinalProject
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataForm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataForm.Location = new System.Drawing.Point(18, 134);
+            this.dataForm.Location = new System.Drawing.Point(18, 180);
             this.dataForm.Name = "dataForm";
-            this.dataForm.Size = new System.Drawing.Size(649, 304);
+            this.dataForm.Size = new System.Drawing.Size(649, 258);
             this.dataForm.TabIndex = 0;
             // 
             // addPerson
@@ -84,7 +87,7 @@ namespace _560FinalProject
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai Medium", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 95);
+            this.label1.Location = new System.Drawing.Point(12, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 36);
             this.label1.TabIndex = 3;
@@ -94,7 +97,7 @@ namespace _560FinalProject
             // 
             this.tableLabel.AutoSize = true;
             this.tableLabel.Font = new System.Drawing.Font("Dubai Medium", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLabel.Location = new System.Drawing.Point(215, 95);
+            this.tableLabel.Location = new System.Drawing.Point(215, 141);
             this.tableLabel.Name = "tableLabel";
             this.tableLabel.Size = new System.Drawing.Size(93, 36);
             this.tableLabel.TabIndex = 4;
@@ -177,16 +180,48 @@ namespace _560FinalProject
             this.query1Button.Name = "query1Button";
             this.query1Button.Size = new System.Drawing.Size(103, 47);
             this.query1Button.TabIndex = 12;
-            this.query1Button.Text = "Query1";
+            this.query1Button.Text = "Female Platelet Donors";
             this.query1Button.UseVisualStyleBackColor = true;
             this.query1Button.Click += new System.EventHandler(this.query1Button_Click);
+            // 
+            // query2Button
+            // 
+            this.query2Button.Location = new System.Drawing.Point(480, 12);
+            this.query2Button.Name = "query2Button";
+            this.query2Button.Size = new System.Drawing.Size(103, 47);
+            this.query2Button.TabIndex = 13;
+            this.query2Button.Text = "All Plasma Donations";
+            this.query2Button.UseVisualStyleBackColor = true;
+            this.query2Button.Click += new System.EventHandler(this.query2Button_Click);
+            // 
+            // query3Button
+            // 
+            this.query3Button.Location = new System.Drawing.Point(371, 65);
+            this.query3Button.Name = "query3Button";
+            this.query3Button.Size = new System.Drawing.Size(103, 47);
+            this.query3Button.TabIndex = 14;
+            this.query3Button.Text = "Donation Count";
+            this.query3Button.UseVisualStyleBackColor = true;
+            this.query3Button.Click += new System.EventHandler(this.query3Button_Click);
+            // 
+            // query4Button
+            // 
+            this.query4Button.Location = new System.Drawing.Point(480, 65);
+            this.query4Button.Name = "query4Button";
+            this.query4Button.Size = new System.Drawing.Size(103, 47);
+            this.query4Button.TabIndex = 15;
+            this.query4Button.Text = "Query4";
+            this.query4Button.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.query4Button);
+            this.Controls.Add(this.query3Button);
+            this.Controls.Add(this.query2Button);
             this.Controls.Add(this.query1Button);
             this.Controls.Add(this.q1Button);
             this.Controls.Add(this.allButton);
@@ -224,5 +259,8 @@ namespace _560FinalProject
         private System.Windows.Forms.Button allButton;
         private System.Windows.Forms.Button q1Button;
         private System.Windows.Forms.Button query1Button;
+        private System.Windows.Forms.Button query2Button;
+        private System.Windows.Forms.Button query3Button;
+        private System.Windows.Forms.Button query4Button;
     }
 }
